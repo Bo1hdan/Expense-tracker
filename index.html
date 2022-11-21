@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>Type of purchase</th>
+          <th>Price of purchase</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <select name="Spend" id="Spend-select">
+              <option value="">Choose an option</option>
+              <option value="Shop"></option>
+              <option value="Movie">Movie</option>
+              <option value="Restaurant">Restaurant</option>
+              <option value="Clothes">Clothes</option>
+              <option value="Medical">Medical</option>
+              <option value="Utilities">Utilities</option>
+            </select>
+          </td>
+          <td>50</td>
+          <td>
+            <input type="date">
+          </td>
+        </tr>
+        <tr>
+          <td>Movie</td>
+          <td>150</td>
+          <td>21.02.2022</td>
+        </tr>
+        <tr>
+          <td>house</td>
+          <td>350</td>
+          <td>22.02.2022</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <div class="header">
+      <h1>Expense tracker</h1>
+      <h2>Add a new item</h2>
+    </div>
+    <div class="main">
+      <div class="input-axpense">
+        <form action="/sdsa" id="expenseForm">
+          <div class="item-name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="input-date">
+            <label for="date">Date:</label>
+            <input type="date" id="date" />
+          </div>
+          <div class="input-amount">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" />
+          </div>
+          <div class="input-submit">
+            <button id="addExpense">Add Expense</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- <tr>
+            <td>McDonalds</td>
+            <td>10.10.2022</td>
+            <td>10</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
