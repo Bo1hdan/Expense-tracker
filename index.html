@@ -12,9 +12,44 @@
       <h1>Expense tracker</h1>
       <h2>Add a new item</h2>
     </div>
+    
     <div class="main">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="myFunction()"
+        placeholder="Search for names.."
+        title="Type in a name"
+      />
+      <input
+        type="text"
+        id="myInput1"
+        onkeyup="myFunction1()"
+        placeholder="Search for names.."
+        title="Type in a name"
+      />
+      <input
+        type="text"
+        id="myInput2"
+        onkeyup="myFunction2()"
+        placeholder="Search for names.."
+        title="Type in a name"
+      />
+      <input
+        type="text"
+        id="myInput3"
+        onkeyup="myFunction3()"
+        placeholder="Search for names.."
+        title="Type in a name"
+      />
+      <p><button onclick="sortTable()">Sort</button></p>
+      <p><button onclick="sortTable1()">Sort</button></p>
+      <p><button onclick="sortTable2()">Sort</button></p>
+      <p><button onclick="sortTable3()">Sort</button></p>
       <div class="input-expense">
+        
         <form action="/sdsa" id="expenseForm">
+          
           <div class="item-type">
             <label for="type">Type:</label>
             <select name="Spend" id="type">
@@ -45,7 +80,7 @@
       </div>
     </div>
     <div class="table">
-      <table class="table-content">
+      <table class="table-content" id="table">
         <thead id="table-head">
           <tr>
             <th>Type</th>
@@ -54,7 +89,91 @@
             <th>Amount</th>
           </tr>
         </thead>
-        <tbody id="table-body">         
+        <tbody id="table-body">
+          <tr>
+            <td>Entertainment</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Entertainment</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Rent/Utilities</td>
+            <td>Water</td>
+            <td>11.01.2022</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Rent/Utilities</td>
+            <td>Heat</td>
+            <td>08.20.2022</td>
+            <td>15000</td>
+          </tr>
+          <tr>
+            <td>Entertainment</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Clothes</td>
+            <td>T-shirt</td>
+            <td>05.14.2022</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Health</td>
+            <td>Cream</td>
+            <td>10.05.2022</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>AAAAAAA</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>BBBBBB</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Health</td>
+            <td>Pills</td>
+            <td>09.09.2012</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Entertainment</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Entertainment</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>DDDDDD</td>
+            <td>Movie</td>
+            <td>12.20.2022</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Something</td>
+            <td>Bottle</td>
+            <td>11.28.2022</td>
+            <td>10</td>
+          </tr>
         </tbody>
         <tfoot id="table-footer"></tfoot>
       </table>
