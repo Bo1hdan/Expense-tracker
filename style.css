@@ -127,3 +127,13 @@ button:hover {
     font-size: 1em;
   }
 }
+
+#search-form{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  /* flex-direction: column; */
+  max-width: 850px;
+  max-height: 100vh;
+  padding-bottom: 3rem;
+}

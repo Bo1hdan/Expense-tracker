@@ -12,11 +12,11 @@
       <h1>Expense tracker</h1>
       <h2>Add a new item</h2>
     </div>
-    
+
     <div class="main">
-      <input
+      <!-- <input
         type="text"
-        id="myInput"
+        id="myInput0"
         onkeyup="myFunction()"
         placeholder="Search for names.."
         title="Type in a name"
@@ -24,32 +24,48 @@
       <input
         type="text"
         id="myInput1"
-        onkeyup="myFunction1()"
+        onkeyup="myFunction()"
         placeholder="Search for names.."
         title="Type in a name"
       />
       <input
         type="text"
         id="myInput2"
-        onkeyup="myFunction2()"
+        onkeyup="myFunction()"
         placeholder="Search for names.."
         title="Type in a name"
       />
       <input
         type="text"
         id="myInput3"
-        onkeyup="myFunction3()"
+        onkeyup="myFunction()"
         placeholder="Search for names.."
         title="Type in a name"
       />
       <p><button onclick="sortTable()">Sort</button></p>
       <p><button onclick="sortTable1()">Sort</button></p>
       <p><button onclick="sortTable2()">Sort</button></p>
-      <p><button onclick="sortTable3()">Sort</button></p>
+      <p><button onclick="sortTable3()">Sort</button></p> -->
       <div class="input-expense">
-        
+        <form action="/sdwq" id="filter-form">
+          <div class="type-filter-input">
+            <input type="text" id="type-filter" />
+          </div>
+          <div class="name-filter-input">
+            <input type="text" id="name-filter" />
+          </div>
+          <div class="date-filter-input">
+            <input type="text" id="date-filter" />
+          </div>
+          <div class="amount-filter-input">
+            <input type="text" id="amount-filter" />
+          </div>
+          <div class="filter-submit">
+            <button id="filter">Filter</button>
+          </div>
+        </form>
+
         <form action="/sdsa" id="expenseForm">
-          
           <div class="item-type">
             <label for="type">Type:</label>
             <select name="Spend" id="type">
@@ -90,7 +106,7 @@
           </tr>
         </thead>
         <tbody id="table-body">
-          <tr>
+          <!-- <tr>
             <td>Entertainment</td>
             <td>Movie</td>
             <td>12.20.2022</td>
@@ -98,9 +114,9 @@
           </tr>
           <tr>
             <td>Entertainment</td>
-            <td>Movie</td>
-            <td>12.20.2022</td>
-            <td>5</td>
+            <td>Park</td>
+            <td>11.20.2022</td>
+            <td>6</td>
           </tr>
           <tr>
             <td>Rent/Utilities</td>
@@ -117,7 +133,7 @@
           <tr>
             <td>Entertainment</td>
             <td>Movie</td>
-            <td>12.20.2022</td>
+            <td>12.21.2022</td>
             <td>5</td>
           </tr>
           <tr>
@@ -173,7 +189,7 @@
             <td>Bottle</td>
             <td>11.28.2022</td>
             <td>10</td>
-          </tr>
+          </tr> --> 
         </tbody>
         <tfoot id="table-footer"></tfoot>
       </table>
